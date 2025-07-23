@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kartikeya Rajput | Portfolio",
+  title: "Lakshya Singh | Portfolio",
   description:
-    "Full-stack Software Engineer with expertise in React.js, Next.js, Spring Boot, and Flutter. Passionate about creating scalable web applications and innovative solutions.",
+    "Full-stack Developer skilled in React.js, Next.js, MERN Stack, Java, and TypeScript. Passionate about building scalable web applications and impactful digital solutions.",
   keywords:
-    "Software Engineer, Full Stack Developer, React.js, Next.js, Spring Boot, Flutter, TypeScript, JavaScript, Java",
-  authors: [{ name: "Kartikeya Rajput" }],
-  creator: "Kartikeya Rajput",
+    "Lakshya Singh, Software Engineer, Full Stack Developer, React.js, Next.js, MERN Stack, JavaScript, TypeScript, Java",
+  authors: [{ name: "Lakshya Singh" }],
+  creator: "Lakshya Singh",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -32,24 +32,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://kartikeyarajput.tech",
-    siteName: "Kartikeya Rajput Portfolio",
-    title: "Kartikeya Rajput | Portfolio",
+    siteName: "Lakshya Singh Portfolio",
+    title: "Lakshya Singh | Portfolio",
     description:
-      "Full-stack Software Engineer with expertise in React.js, Next.js, Spring Boot, and Flutter.",
+      "Full-stack Developer skilled in React.js, Next.js, MERN Stack, Java, and TypeScript.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Kartikeya Rajput - Portfolio",
+        alt: "Lakshya Singh - Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kartikeya Rajput | Portfolio",
+    title: "Lakshya Singh | Portfolio",
     description:
-      "Full-stack Software Engineer with expertise in React.js, Next.js, Spring Boot, and Flutter.",
+      "Full-stack Developer skilled in React.js, Next.js, MERN Stack, Java, and TypeScript.",
     images: ["/og-image.jpg"],
   },
   robots: {

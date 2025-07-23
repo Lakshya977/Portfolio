@@ -12,7 +12,7 @@ export default function MobileNavigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Update active section based on scroll position
+     
       const sections = navItems.map((item) => item.href.slice(1));
       const scrollPosition = window.scrollY + 100;
 
