@@ -101,6 +101,7 @@ export const skills = {
     { name: "HTML", level: 95, category: "frontend" },
     { name: "CSS", level: 90, category: "frontend" },
     { name: "SQL", level: 80, category: "database" },
+    { name: "Python", level: 75, category: "data" },
   ],
   frontend: [
     { name: "React.js", level: 90, category: "frontend" },
@@ -118,15 +119,36 @@ export const skills = {
   database: [
     { name: "MongoDB", level: 85, category: "database" },
     { name: "Mongoose", level: 80, category: "database" },
+    { name: "MySQL", level: 80, category: "database" },
+    { name: "Firebase", level: 70, category: "database" },
   ],
   tools: [
     { name: "Git", level: 90, category: "tools" },
+    { name: "GitHub", level: 90, category: "tools" },
     { name: "VS Code", level: 90, category: "tools" },
+    { name: "Postman", level: 85, category: "tools" },
     { name: "Cloudinary", level: 75, category: "tools" },
     { name: "Multer", level: 75, category: "tools" },
     { name: "OAuth", level: 80, category: "auth" },
+    { name: "AWS EC2", level: 70, category: "tools" },
+    { name: "Render", level: 75, category: "tools" },
+    { name: "Netlify", level: 80, category: "tools" },
+    { name: "Vercel", level: 85, category: "tools" },
+  ],
+  cloud: [
+    { name: "AWS EC2", level: 70, category: "cloud" },
+    { name: "Render", level: 75, category: "cloud" },
+    { name: "Netlify", level: 80, category: "cloud" },
+    { name: "Vercel", level: 85, category: "cloud" },
+  ],
+  data: [
+     { name: "Seaborn", level: 65, category: "data" },
+    { name: "Power BI", level: 60, category: "data" },
+    { name: "Excel", level: 85, category: "data" },
+    { name: "Scikit-learn", level: 65, category: "data" },
   ],
 };
+
 
 export const education = [
   {
@@ -142,14 +164,34 @@ export const education = [
     id: 2,
     institution: "Bal Bhavan Public School",
     degree: "Class XII (CBSE)",
-    duration: "2020–2021",
+    duration: "2021–2022",
     location: "Delhi, India",
     percentage: "85.8%",
     current: false,
   },
+  {
+    id: 3,
+    institution: "Bal Bhavan Public School",
+    degree: "Class X (CBSE)",
+    duration: "2019–2020",
+    location: "Delhi, India",
+    percentage: "90%",
+    current: false,
+  }
+
 ];
 
-export const leadership = [];
+export const leadership = [
+  {
+    id: 1,
+    organization: "Robotics Club, MSIT",
+    position: "Event Management",
+    duration: "2023 – 2025",
+    description:
+      "Organized and facilitated a robotics workshop focusing on basic automation principles and Arduino programming. Engaged 30+ participants in hands-on learning sessions and live demos, helping promote practical tech exposure on campus.",
+  },
+];
+
 
 export const navItems = [
   { name: "Home", href: "#home" },

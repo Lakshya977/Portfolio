@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { skills } from "@/lib/data";
-import { Code, Database, Wrench, Smartphone, Globe } from "lucide-react";
+import { Code, Database, Wrench, Cloud } from "lucide-react";
 import TechIcon from "@/components/ui/TechIcon";
 
 export default function SkillsSection() {
@@ -11,9 +11,8 @@ export default function SkillsSection() {
   const categories = [
     { id: "frontend", name: "Frontend", icon: Code },
     { id: "backend", name: "Backend", icon: Database },
-    { id: "mobile", name: "Mobile", icon: Smartphone },
     { id: "tools", name: "Tools", icon: Wrench },
-    { id: "cloud", name: "Cloud", icon: Database },
+   
   ];
 
   const getAllSkills = () => {
@@ -23,6 +22,7 @@ export default function SkillsSection() {
       ...skills.backend,
       ...skills.database,
       ...skills.tools,
+      ...skills.cloud,
     ];
   };
 
@@ -36,15 +36,10 @@ export default function SkillsSection() {
         ...skills.backend.filter((s) => s.category === "backend"),
         ...skills.languages.filter((s) => s.category === "backend"),
       ],
-      mobile: [
-        ...skills.frontend.filter((s) => s.category === "mobile"),
-        ...skills.languages.filter((s) => s.category === "mobile"),
-      ],
       tools: [
         ...skills.tools.filter((s) => s.category === "tools"),
         ...skills.backend.filter((s) => s.category === "tools"),
       ],
-      database: skills.database,
       cloud: skills.tools.filter((s) => s.category === "cloud"),
     };
 
@@ -76,9 +71,9 @@ export default function SkillsSection() {
               ? "bg-primary-purple/20 text-primary-purple"
               : skill.category === "database"
               ? "bg-primary-cyan/20 text-primary-cyan"
-              : skill.category === "mobile"
-              ? "bg-green-500/20 text-green-400"
-              : "bg-yellow-500/20 text-yellow-400"
+              : skill.category === "tools"
+              ? "bg-yellow-500/20 text-yellow-400"
+              : "bg-orange-500/20 text-orange-400"
           }`}
         >
           {skill.category}
@@ -118,8 +113,8 @@ export default function SkillsSection() {
           ))}
         </div>
 
-        {/* Skills Grid - Detailed View with Progress Bars - Hidden on Mobile */}
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+        {/* Skills Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
           {getFilteredSkills().map((skill, index) => (
             <div
               key={`${skill.name}-${index}`}
@@ -131,44 +126,7 @@ export default function SkillsSection() {
           ))}
         </div>
 
-        {/* Mobile Skills Display - Polished Glass Container */}
-        <div className="md:hidden mb-16">
-          <div className="glass-card p-8 rounded-2xl shadow-2xl animate-fade-in">
-            <div className="text-center mb-6">
-              <h3 className="text-xl font-bold gradient-text mb-2">
-                {categories.find((cat) => cat.id === activeCategory)?.name}{" "}
-                Technologies
-              </h3>
-              <div className="h-px bg-gradient-to-r from-transparent via-glass-border to-transparent mb-6"></div>
-            </div>
-
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 justify-items-center">
-              {getFilteredSkills().map((skill, index) => (
-                <div
-                  key={`mobile-${skill.name}-${index}`}
-                  className="animate-fade-in transform hover:scale-110 transition-all duration-300"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <TechIcon skill={skill} />
-                </div>
-              ))}
-            </div>
-
-            {/* Subtle bottom accent */}
-            <div className="mt-6 text-center">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-glass-bg border border-glass-border">
-                <span className="text-xs text-text-muted">
-                  {getFilteredSkills().length}{" "}
-                  {getFilteredSkills().length === 1
-                    ? "Technology"
-                    : "Technologies"}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Tech Stack Showcase - Icon-Only Infinite Carousel */}
+        {/* Tech Stack Showcase */}
         <div className="mt-20">
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold text-text-primary mb-4">
@@ -183,10 +141,7 @@ export default function SkillsSection() {
           <div className="relative mb-6 overflow-hidden">
             <div className="flex animate-scroll-left">
               {[...getAllSkills(), ...getAllSkills()].map((skill, index) => (
-                <TechIcon
-                  key={`tech-row1-${skill.name}-${index}`}
-                  skill={skill}
-                />
+                <TechIcon key={`tech-row1-${skill.name}-${index}`} skill={skill} />
               ))}
             </div>
           </div>
@@ -207,7 +162,7 @@ export default function SkillsSection() {
         </div>
       </div>
 
-      {/* Enhanced Custom Animations */}
+      {/* Custom Animations */}
       <style jsx>{`
         @keyframes scroll-left {
           0% {
@@ -235,7 +190,6 @@ export default function SkillsSection() {
           animation: scroll-right 60s linear infinite;
         }
 
-        /* Pause animation on hover for better UX */
         .animate-scroll-left:hover,
         .animate-scroll-right:hover {
           animation-play-state: paused;

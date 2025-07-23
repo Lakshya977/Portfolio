@@ -5,7 +5,7 @@ import React from "react";
 export default function BackgroundElements() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
-      {/* Gradient Background */}
+      
       <div className="absolute inset-0 bg-gradient-to-br from-bg-primary via-bg-secondary to-bg-tertiary" />
 
       {/* Animated Gradient Mesh - More Subtle */}

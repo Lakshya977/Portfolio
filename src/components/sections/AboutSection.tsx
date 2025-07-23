@@ -6,9 +6,9 @@ import { MapPin, GraduationCap, Award, Users } from "lucide-react";
 
 export default function AboutSection() {
   const stats = [
-    { label: "Years Experience", value: "2+", icon: Award },
+    { label: "Years Experience", value: "1+", icon: Award },
     { label: "Projects Completed", value: "10+", icon: GraduationCap },
-    { label: "Students Mentored", value: "10+", icon: Users },
+    { label: "Workshop Organized", value: "5+", icon: Users },
     { label: "Technologies", value: "15+", icon: Award },
   ];
 
