@@ -22,7 +22,7 @@ export default function SkillsSection() {
       ...skills.backend,
       ...skills.database,
       ...skills.tools,
-      ...skills.cloud,
+     
     ];
   };
 

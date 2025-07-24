@@ -1,15 +1,13 @@
-// ✅ Framework & Library Icons
 import {
+  // Framework Icons
   SiReact,
   SiNextdotjs,
-  SiTailwindcss,
-  SiVite,
-  SiRedux,
   SiSpring,
   SiNodedotjs,
-  SiExpress,
+  SiFlutter,
+  SiVite,
 
-  // ✅ Language Icons
+  // Language Icons
   SiJavascript,
   SiTypescript,
   SiOpenjdk,
@@ -18,13 +16,12 @@ import {
   SiPython,
   SiDart,
 
-  // ✅ Database Icons
+  // Database Icons
   SiMongodb,
   SiMysql,
   SiFirebase,
-  SiMongoose,
 
-  // ✅ Tool & Cloud Icons
+  // Tool Icons
   SiGit,
   SiKubernetes,
   SiBitbucket,
@@ -34,25 +31,23 @@ import {
   SiApache,
   SiGradle,
   SiHibernate,
-  SiVisualstudiocode,
-  SiCloudinary,
-  SiAuth0,
-  SiJsonwebtokens,
-  SiStripe,
-  SiOauth,
+
+  // Styling & Other
+  SiTailwindcss,
 } from "react-icons/si";
 
 import {
-  Code,
   Code2,
   Database,
-  Shield,
   Network,
+  Server,
+  Globe,
+  Shield,
+  Package,
 } from "lucide-react";
 
-// 🛠️ Icon Mapping for Each Technology
 export const techIcons = {
-  // 🔷 Languages
+  // Languages
   Java: SiOpenjdk,
   JavaScript: SiJavascript,
   TypeScript: SiTypescript,
@@ -60,62 +55,51 @@ export const techIcons = {
   Dart: SiDart,
   HTML: SiHtml5,
   CSS: SiCss3,
-  SQL: SiMysql,
+  "HTML/CSS": SiHtml5,
 
-  // 🎨 Frontend
+  // Frontend Frameworks
   "React.js": SiReact,
   "Next.js": SiNextdotjs,
   "Tailwind CSS": SiTailwindcss,
+  Flutter: SiFlutter,
   "Vite.js": SiVite,
-  Redux: SiRedux,
 
-  // 🔧 Backend
+  // Backend Technologies
   "Spring Boot": SiSpring,
   "Spring Framework": SiSpring,
   "Spring Security": Shield,
   "Node.js": SiNodedotjs,
-  "Express.js": SiExpress,
   "RESTful APIs": Code2,
-  JWT: SiJsonwebtokens,
+  Microservices: Network,
   "JPA/Hibernate": SiHibernate,
   Maven: SiApache,
   Gradle: SiGradle,
-  Microservices: Network,
-  OAuth: SiOauth,
-  "Stripe API": SiStripe,
+  "Maven/Gradle": SiApache,
 
-  // 🛢️ Databases
+  // Databases
   MongoDB: SiMongodb,
   MySQL: SiMysql,
   Firebase: SiFirebase,
   "H2 Database": Database,
-  Mongoose: SiMongoose,
 
-  // 🧰 Tools
+  // Development Tools
   Git: SiGit,
-  VSCode: SiVisualstudiocode,
   Jira: SiJira,
+  Kubernetes: SiKubernetes,
   Bitbucket: SiBitbucket,
   Docker: SiDocker,
-  Kubernetes: SiKubernetes,
-
-  // ☁️ Cloud
   AWS: SiAmazon,
-  Cloudinary: SiCloudinary,
-  Auth0: SiAuth0,
-  Stripe: SiStripe,
 };
 
-// 🎨 Tailwind Class Color Mapping by Category
+// Category color mapping for consistent theming
 export const categoryColors = {
-  language: "text-indigo-400",
-  frontend: "text-sky-400",
-  backend: "text-purple-400",
-  database: "text-cyan-400",
+  frontend: "text-primary-blue",
+  backend: "text-primary-purple",
+  database: "text-primary-cyan",
+  mobile: "text-green-400",
   tools: "text-yellow-400",
   cloud: "text-orange-400",
-  mobile: "text-green-400",
-  auth: "text-rose-400",
+  language: "text-indigo-400",
 } as const;
 
 export type TechName = keyof typeof techIcons;
