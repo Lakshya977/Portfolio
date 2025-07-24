@@ -59,7 +59,7 @@ export const projects = [
     ],
     githubUrl: "https://github.com/Lakshya977/CrackIt",
     liveUrl: "",
-    image: "/projects/streaming-app.jpg",
+    image: "/projects/Project1.png",
     featured: true,
   },
   {
@@ -70,28 +70,33 @@ export const projects = [
       "Developed a job portal where recruiters can post jobs and users can apply with resumes. Integrated Multer & Cloudinary for uploads, JWT for secure access, and keyword/location filters for smart job search.",
     technologies: ["MongoDB", "Express", "React", "Node", "JWT", "Multer", "Cloudinary"],
     githubUrl: "https://github.com/Lakshya977/JobPortal",
-    liveUrl: "",
-    image: "/projects/task-management.jpg",
+    liveUrl: "https://job-portal-client-mauve.vercel.app/",
+    image: "/projects/project2.png",
     featured: true,
   },
   {
     id: 3,
-    title: "BeachSafe India",
-    description: "Mobile application for beach safety assessment across Indian coastlines",
+    title: "Stock Price Prediction with LSTM & Sentiment",
+    description: "LSTM-based model combining historical data with sentiment analysis from news and tweets",
     longDescription:
-      "Developed Flutter application covering 20+ Indian beaches across 8 states with automatic safety assessment based on wave height. Integrated Firebase Realtime Database with Google Maps API, implementing role-based access controls and offline data persistence.",
+      "Built a Python-based forecasting system that predicts stock prices by combining historical OHLCV data with sentiment scores derived from financial news and Twitter using VADER and TextBlob. Trained an LSTM model using TensorFlow/Keras, achieving better accuracy than traditional models. Used Yahoo Finance & News APIs, and visualized results with Matplotlib.",
     technologies: [
-      "Flutter",
-      "Firebase",
-      "Google Maps API",
-      "Real-time Database",
+      "Python",
+      "TensorFlow",
+      "LSTM",
+      "VADER",
+      "TextBlob",
+      "yfinance",
+      "NewsAPI",
+      "Matplotlib",
     ],
-    githubUrl: "https://github.com/RajputKartikeya/beachsafteyapp",
+    githubUrl: "https://github.com/Lakshya977/StockPrediction",
     liveUrl: "",
-    image: "/projects/beachsafe-india.jpg",
-    featured: true,
+    image: "/projects/Stock_Prediction.jpg",
+    featured: false,
   },
 ];
+
 
 export const skills = {
   languages: [

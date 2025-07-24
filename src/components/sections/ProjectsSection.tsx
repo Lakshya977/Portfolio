@@ -131,7 +131,7 @@ export default function ProjectsSection() {
         {/* View All Projects Button */}
         <div className="text-center mt-12">
           <a
-            href="https://github.com/RajputKartikeya"
+            href="https://github.com/Lakshya977"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 glass-button rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300"

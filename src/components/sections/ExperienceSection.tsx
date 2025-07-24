@@ -158,7 +158,7 @@ export default function ExperienceSection() {
         <div className="text-center mt-12">
           <a
             href="/resume.pdf"
-            download="Kartikeya_Rajput_Resume.pdf"
+            download="lakshya.pdf"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-blue to-primary-purple text-white rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             <svg

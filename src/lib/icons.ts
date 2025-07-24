@@ -8,7 +8,6 @@ import {
   SiSpring,
   SiNodedotjs,
   SiExpress,
-  SiFlutter,
 
   // ✅ Language Icons
   SiJavascript,

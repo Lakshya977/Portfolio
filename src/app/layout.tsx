@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://kartikeyarajput.tech",
+    url: "https://LakshyaSingh.tech",
     siteName: "Lakshya Singh Portfolio",
     title: "Lakshya Singh | Portfolio",
     description:
