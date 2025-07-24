@@ -276,7 +276,7 @@ The project supports any platform that can host Next.js applications.
 
 **Lakshya Singh**
 
-- 🌐 Portfolio: 
+- 🌐 Portfolio: [LakshyaSingh](https://lakshyasingh-portfolio-4tpb.vercel.app/)
 - 💼 LinkedIn: [LakshyaSingh](https://www.linkedin.com/in/lakshya-singh-b7b325287/)
 - 🐙 GitHub: [Lakshya977](https://github.com/Lakshya977)
 - 📧 Email: Lakshya8998@gmail.com
