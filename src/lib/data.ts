@@ -95,6 +95,23 @@ export const projects = [
     image: "/projects/Stock_Prediction.jpg",
     featured: false,
   },
+  {
+    id: 4,
+    title: "Lakshya Singh – Developer Portfolio",
+    description: "Modern, responsive portfolio website built with Vite, Tailwind, and Framer Motion",
+    longDescription:
+      "Designed and built a sleek portfolio showcasing projects, skills, and contact details. Used Vite + React for fast rendering, Tailwind CSS for styling, and Framer Motion for animations. Emphasized responsive design, smooth UI transitions, and professional layout. Hosted on Vercel for optimized performance.",
+    technologies: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    githubUrl: "https://github.com/Lakshya977/Portfolio",
+    liveUrl: "https://lakshyasingh-portfolio-4tpb.vercel.app/",
+    image: "/projects/portfolio.png",
+    featured: true,
+  },
 ];
 
 
