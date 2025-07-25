@@ -110,7 +110,7 @@ export const projects = [
     githubUrl: "https://github.com/Lakshya977/Portfolio",
     liveUrl: "https://lakshyasingh-portfolio-4tpb.vercel.app/",
     image: "/projects/portfolio.png",
-    featured: true,
+    featured: false,
   },
 ];
 
